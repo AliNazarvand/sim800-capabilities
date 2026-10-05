@@ -103,6 +103,13 @@ Contributions are welcome! Please follow these steps:
 Please ensure that any changes to the data files pass the validation and
 tests (`pytest`).
 
+## Related Project
+
+- [sim800-at-deltas](https://github.com/AliNazarvand/sim800-at-deltas)
+- [sim800-at-urc]   (https://github.com/AliNazarvand/sim800-at-urc)
+- [sim800-at-urc]   (https://github.com/AliNazarvand/sim800-capabilities)
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

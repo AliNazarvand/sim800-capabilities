@@ -1,0 +1,22 @@
+version: 1
+out_of_scope:
+  - capability: audio
+    reason: "Audio codec / processing is not a hardware capability of interest; PCM hardware interface is kept in scope instead."
+  - capability: keypad
+    reason: "Keypad interface is not modelled by the driver."
+  - capability: spi
+    reason: "SPI is not a supported peripheral on the target family."
+  - capability: i2c
+    reason: "I2C is not a supported peripheral on the target family."
+  - capability: sd
+    reason: "SD card interface is not required by the driver."
+  - capability: camera
+    reason: "Camera interface is not supported / not required."
+  - capability: fm
+    reason: "FM radio is out of the driver scope."
+  - capability: charging
+    reason: "Charging circuitry is a board-level concern, not a module capability."
+  - capability: dimensions
+    reason: "Physical dimensions are outside the driver capability model."
+  - capability: antenna
+    reason: "Physical GSM/GPS antennas are out of scope. GNSS antenna_interface remains in scope."

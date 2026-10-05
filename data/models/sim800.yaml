@@ -1,0 +1,90 @@
+version: 1
+model: SIM800
+aliases: []
+family: SIM800
+capabilities:
+  bands:
+    gsm:   {value: [850, 900, 1800, 1900], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Frequency Bands", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    gprs:  {value: [850, 900, 1800, 1900], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Frequency Bands", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    type:  {value: quad-band, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Frequency Bands", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  data_features:
+    edge: {value: false, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Features", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  gprs:
+    multi_slot_class:   {value: 12, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    max_downlink_slots: {value: 4,  status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    max_uplink_slots:   {value: 4,  status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    max_total_slots:    {value: 5,  status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    coding_schemes:     {value: [CS1, CS2, CS3, CS4], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    device_class:       {value: B, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "GPRS", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  bluetooth:
+    supported: {value: true, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Bluetooth", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    version:   {value: "3.0", status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Bluetooth", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    profiles:  {value: [SPP, HFP, HSP, A2DP, AVRCP, PBAP], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Bluetooth", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:     {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  gpio:
+    count: {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes: {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  adc:
+    count:           {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    resolution_bits: {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:           {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  pcm:
+    supported: {value: true, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "PCM", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    channels:  {value: 2, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "PCM", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    mode:      {value: both, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "PCM", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:     {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  usb:
+    supported: {value: true, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "USB", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    version:   {value: "2.0", status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "USB", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    speed:     {value: full-speed, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "USB", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    connector: {value: other, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "USB", table: null, figure: null}, confidence: medium, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:     {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  sim_interface:
+    count:     {value: 1, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "SIM Interface", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    voltages:  {value: [1.8V, 3.0V], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "SIM Interface", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    detection: {value: true, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "SIM Interface", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    hot_swap:  {value: true, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "SIM Interface", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:     {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  uart_serial:
+    ports:          {value: 2, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Serial Ports", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    voltage_levels: {value: [1.8V, 3.0V], status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Serial Ports", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    flow_control:   {value: hardware, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Serial Ports", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:          {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  gnss:
+    supported:      {value: false, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: "GNSS is not supported on SIM800", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    constellations: {value: [], status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    channels:       {value: 0, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    sensitivity:    {value: null, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    accuracy:       {value: null, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    update_rate:    {value: null, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    protocols:      {value: [], status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    antenna_interface: {value: null, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:          {value: null, status: not_supported, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  environmental:
+    operating_temperature_min_c: {value: -40, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Temperature", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    operating_temperature_max_c: {value: 85, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Temperature", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    storage_temperature_min_c:   {value: -45, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Temperature", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    storage_temperature_max_c:   {value: 90, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Temperature", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    humidity_min_percent:        {value: 5, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Humidity", table: null, figure: null}, confidence: medium, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    humidity_max_percent:        {value: 95, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Humidity", table: null, figure: null}, confidence: medium, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    notes:                       {value: null, status: not_documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: null, table: null, figure: null}, confidence: low, reason: "not mentioned in source", notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+  power:
+    vbat_min_v: {value: 3.4, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Power Supply", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    vbat_max_v: {value: 4.4, status: documented, source_id: sim800_hd_v1_09, source_ref: {page: null, section: "Power Supply", table: null, figure: null}, confidence: high, reason: null, notes: null, inference_source: null, inference_rule: null, applicable_firmware: null}
+    current_consumption:
+      value:
+        - {mode: idle, typical_ma: 1.2, max_ma: null, conditions: "idle, no SIM activity"}
+        - {mode: transmit, typical_ma: 350, max_ma: 2000, conditions: "GSM 850/900 burst"}
+        - {mode: sleep, typical_ma: 1.0, max_ma: null, conditions: "sleep mode"}
+      status: documented
+      source_id: sim800_hd_v1_09
+      source_ref: {page: null, section: "Current Consumption", table: null, figure: null}
+      confidence: medium
+      reason: null
+      notes: null
+      inference_source: null
+      inference_rule: null
+      applicable_firmware: null
+metadata:
+  extraction_notes: null
+  conflicts: []

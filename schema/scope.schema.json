@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "scope.yaml",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version","last_updated","models","family_map","excluded_models","rationale","in_scope_capabilities","out_of_scope_capabilities"],
+  "properties": {
+    "version":      { "type": "integer", "const": 1 },
+    "last_updated": { "type": "string" },
+    "models":       { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "family_map":   { "type": "object", "additionalProperties": { "type": "string", "enum": ["SIM800","SIM808","SIM868"] } },
+    "excluded_models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["model","reason"],
+        "properties": { "model": { "type": "string" }, "reason": { "type": "string" } }
+      }
+    },
+    "rationale": { "type": ["string","null"] },
+    "in_scope_capabilities":  { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "out_of_scope_capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+  }
+}

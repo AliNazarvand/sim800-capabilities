@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "out-of-scope.yaml",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version","out_of_scope"],
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "out_of_scope": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability","reason"],
+        "properties": {
+          "capability": { "type": "string" },
+          "reason":     { "type": "string" }
+        }
+      }
+    }
+  }
+}

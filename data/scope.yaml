@@ -1,0 +1,17 @@
+version: 1
+last_updated: "2024-01-01T00:00:00+00:00"
+models: [SIM800, SIM800A, SIM800C, SIM800C-DS, SIM800F, SIM800H, SIM800L, SIM808, SIM868]
+family_map:
+  SIM800: SIM800
+  SIM800A: SIM800
+  SIM800C: SIM800
+  SIM800C-DS: SIM800
+  SIM800F: SIM800
+  SIM800H: SIM800
+  SIM800L: SIM800
+  SIM808: SIM808
+  SIM868: SIM868
+excluded_models: []
+rationale: "SIM800C-DS and SIM800F added because dedicated Hardware Design manuals exist."
+in_scope_capabilities: [bands, data_features, gprs, bluetooth, gpio, adc, pcm, usb, sim_interface, uart_serial, gnss, environmental, power]
+out_of_scope_capabilities: [audio, keypad, spi, i2c, sd, camera, fm, charging, dimensions, antenna]

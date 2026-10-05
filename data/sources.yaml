@@ -1,0 +1,170 @@
+version: 1
+sources:
+  - id: sim800_hd_v1_09
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800_Hardware%20Design_V1.09.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800_Hardware%20Design_V1.09.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.09"
+    publication_date: null
+    applicable_models: [SIM800]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800a_hd_v1_02
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800A_Hardware%20Design_V1.02.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800A_Hardware%20Design_V1.02.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.02"
+    publication_date: null
+    applicable_models: [SIM800A]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800c_hd_v1_02
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800C_Hardware_Design_V1.02.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800C_Hardware_Design_V1.02.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.02"
+    publication_date: null
+    applicable_models: [SIM800C]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800c_ds_hd_v1_01
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800C-DS_Hardware_Design_V1.01.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800C-DS_Hardware_Design_V1.01.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.01"
+    publication_date: null
+    applicable_models: [SIM800C-DS]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800f_hd_v1_05
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800F_Hardware%20Design_V1.05.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800F_Hardware%20Design_V1.05.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.05"
+    publication_date: null
+    applicable_models: [SIM800F]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800h_l_hd_v2_02
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800H%26SIM800L_Hardware%20Design_V2.02.PDF"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800H%26SIM800L_Hardware%20Design_V2.02.PDF"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V2.02"
+    publication_date: null
+    applicable_models: [SIM800H, SIM800L]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800h_hd_v2_03
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800H_Hardware%20Design_V2.03.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800H_Hardware%20Design_V2.03.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V2.03"
+    publication_date: null
+    applicable_models: [SIM800H]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800l_hd_v1_00
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800L_Hardware%20Design_V1.00.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800L_Hardware%20Design_V1.00.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.00"
+    publication_date: null
+    applicable_models: [SIM800L]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim808_hd_v1_03
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM808_Hardware%20Design_V1.03.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM808_Hardware%20Design_V1.03.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.03"
+    publication_date: null
+    applicable_models: [SIM808]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim868_hd_v1_00
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM868_Hardware_Design_V1.00.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM868_Hardware_Design_V1.00.pdf"
+    local_path: null
+    sha256: null
+    doc_type: hardware_design
+    tier: primary
+    version: "V1.00"
+    publication_date: null
+    applicable_models: [SIM868]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800_at_v1_01
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.01.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.01.pdf"
+    local_path: null
+    sha256: null
+    doc_type: at_command_manual
+    tier: secondary
+    version: "V1.01"
+    publication_date: null
+    applicable_models: [SIM800, SIM800A, SIM800C, SIM800C-DS, SIM800F, SIM800H, SIM800L, SIM808, SIM868]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800_at_v1_10
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.10.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.10.pdf"
+    local_path: null
+    sha256: null
+    doc_type: at_command_manual
+    tier: secondary
+    version: "V1.10"
+    publication_date: null
+    applicable_models: [SIM800, SIM800A, SIM800C, SIM800C-DS, SIM800F, SIM800H, SIM800L, SIM808, SIM868]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"
+
+  - id: sim800_at_v1_12
+    url: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.12.pdf"
+    url_pinned: "https://raw.githubusercontent.com/AliNazarvand/Package-Datasheet/main/SIM800%20Series_AT%20Command%20Manual_V1.12.pdf"
+    local_path: null
+    sha256: null
+    doc_type: at_command_manual
+    tier: secondary
+    version: "V1.12"
+    publication_date: null
+    applicable_models: [SIM800, SIM800A, SIM800C, SIM800C-DS, SIM800F, SIM800H, SIM800L, SIM808, SIM868]
+    not_applicable_models: []
+    retrieved_at: "2024-01-01T00:00:00+00:00"

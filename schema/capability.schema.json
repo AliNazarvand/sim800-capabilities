@@ -1,0 +1,236 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "sim800-capabilities model file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "model", "aliases", "family", "capabilities", "metadata"],
+  "properties": {
+    "version": { "type": "integer", "const": 1 },
+    "model":   { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "family":  { "type": "string", "enum": ["SIM800", "SIM808", "SIM868"] },
+    "capabilities": { "$ref": "#/definitions/capabilities" },
+    "metadata":     { "$ref": "#/definitions/metadata" }
+  },
+  "definitions": {
+    "fieldValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "status", "source_id", "source_ref", "confidence", "reason", "notes", "inference_source", "inference_rule", "applicable_firmware"],
+      "properties": {
+        "value":  {},
+        "status": { "type": "string", "enum": ["documented", "not_documented", "not_supported", "inferred", "conflict", "not_in_scope"] },
+        "source_id":      { "type": ["string", "null"] },
+        "source_ref": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["page", "section", "table", "figure"],
+          "properties": {
+            "page":    { "type": ["integer", "null"] },
+            "section": { "type": ["string", "null"] },
+            "table":   { "type": ["string", "null"] },
+            "figure":  { "type": ["string", "null"] }
+          }
+        },
+        "confidence": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+        "reason":     { "type": ["string", "null"] },
+        "notes":      { "type": ["string", "null"] },
+        "inference_source": { "type": ["string", "null"] },
+        "inference_rule":   { "type": ["string", "null"] },
+        "applicable_firmware": { "type": ["string", "null"] }
+      }
+    },
+    "bands": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gsm", "gprs", "type"],
+      "properties": {
+        "gsm":  { "$ref": "#/definitions/fieldValue" },
+        "gprs": { "$ref": "#/definitions/fieldValue" },
+        "type": { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "data_features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge"],
+      "properties": { "edge": { "$ref": "#/definitions/fieldValue" } }
+    },
+    "gprs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["multi_slot_class", "max_downlink_slots", "max_uplink_slots", "max_total_slots", "coding_schemes", "device_class"],
+      "properties": {
+        "multi_slot_class":  { "$ref": "#/definitions/fieldValue" },
+        "max_downlink_slots":{ "$ref": "#/definitions/fieldValue" },
+        "max_uplink_slots":  { "$ref": "#/definitions/fieldValue" },
+        "max_total_slots":   { "$ref": "#/definitions/fieldValue" },
+        "coding_schemes":    { "$ref": "#/definitions/fieldValue" },
+        "device_class":      { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "bluetooth": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supported", "version", "profiles", "notes"],
+      "properties": {
+        "supported": { "$ref": "#/definitions/fieldValue" },
+        "version":   { "$ref": "#/definitions/fieldValue" },
+        "profiles":  { "$ref": "#/definitions/fieldValue" },
+        "notes":     { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "gpio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "notes"],
+      "properties": {
+        "count": { "$ref": "#/definitions/fieldValue" },
+        "notes": { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "adc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "resolution_bits", "notes"],
+      "properties": {
+        "count":           { "$ref": "#/definitions/fieldValue" },
+        "resolution_bits": { "$ref": "#/definitions/fieldValue" },
+        "notes":           { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "pcm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supported", "channels", "mode", "notes"],
+      "properties": {
+        "supported": { "$ref": "#/definitions/fieldValue" },
+        "channels":  { "$ref": "#/definitions/fieldValue" },
+        "mode":      { "$ref": "#/definitions/fieldValue" },
+        "notes":     { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "usb": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supported", "version", "speed", "connector", "notes"],
+      "properties": {
+        "supported": { "$ref": "#/definitions/fieldValue" },
+        "version":   { "$ref": "#/definitions/fieldValue" },
+        "speed":     { "$ref": "#/definitions/fieldValue" },
+        "connector": { "$ref": "#/definitions/fieldValue" },
+        "notes":     { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "sim_interface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "voltages", "detection", "hot_swap", "notes"],
+      "properties": {
+        "count":     { "$ref": "#/definitions/fieldValue" },
+        "voltages":  { "$ref": "#/definitions/fieldValue" },
+        "detection": { "$ref": "#/definitions/fieldValue" },
+        "hot_swap":  { "$ref": "#/definitions/fieldValue" },
+        "notes":     { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "uart_serial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ports", "voltage_levels", "flow_control", "notes"],
+      "properties": {
+        "ports":          { "$ref": "#/definitions/fieldValue" },
+        "voltage_levels": { "$ref": "#/definitions/fieldValue" },
+        "flow_control":   { "$ref": "#/definitions/fieldValue" },
+        "notes":          { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "gnss": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["supported", "constellations", "channels", "sensitivity", "accuracy", "update_rate", "protocols", "antenna_interface", "notes"],
+      "properties": {
+        "supported":      { "$ref": "#/definitions/fieldValue" },
+        "constellations": { "$ref": "#/definitions/fieldValue" },
+        "channels":       { "$ref": "#/definitions/fieldValue" },
+        "sensitivity":    { "$ref": "#/definitions/fieldValue" },
+        "accuracy":       { "$ref": "#/definitions/fieldValue" },
+        "update_rate":    { "$ref": "#/definitions/fieldValue" },
+        "protocols":      { "$ref": "#/definitions/fieldValue" },
+        "antenna_interface": { "$ref": "#/definitions/fieldValue" },
+        "notes":          { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "environmental": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operating_temperature_min_c","operating_temperature_max_c","storage_temperature_min_c","storage_temperature_max_c","humidity_min_percent","humidity_max_percent","notes"],
+      "properties": {
+        "operating_temperature_min_c": { "$ref": "#/definitions/fieldValue" },
+        "operating_temperature_max_c": { "$ref": "#/definitions/fieldValue" },
+        "storage_temperature_min_c":   { "$ref": "#/definitions/fieldValue" },
+        "storage_temperature_max_c":   { "$ref": "#/definitions/fieldValue" },
+        "humidity_min_percent":        { "$ref": "#/definitions/fieldValue" },
+        "humidity_max_percent":        { "$ref": "#/definitions/fieldValue" },
+        "notes":                       { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "power": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vbat_min_v", "vbat_max_v", "current_consumption"],
+      "properties": {
+        "vbat_min_v": { "$ref": "#/definitions/fieldValue" },
+        "vbat_max_v": { "$ref": "#/definitions/fieldValue" },
+        "current_consumption": { "$ref": "#/definitions/fieldValue" }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bands","data_features","gprs","bluetooth","gpio","adc","pcm","usb","sim_interface","uart_serial","gnss","environmental","power"],
+      "properties": {
+        "bands":         { "$ref": "#/definitions/bands" },
+        "data_features": { "$ref": "#/definitions/data_features" },
+        "gprs":          { "$ref": "#/definitions/gprs" },
+        "bluetooth":     { "$ref": "#/definitions/bluetooth" },
+        "gpio":          { "$ref": "#/definitions/gpio" },
+        "adc":           { "$ref": "#/definitions/adc" },
+        "pcm":           { "$ref": "#/definitions/pcm" },
+        "usb":           { "$ref": "#/definitions/usb" },
+        "sim_interface": { "$ref": "#/definitions/sim_interface" },
+        "uart_serial":   { "$ref": "#/definitions/uart_serial" },
+        "gnss":          { "$ref": "#/definitions/gnss" },
+        "environmental": { "$ref": "#/definitions/environmental" },
+        "power":         { "$ref": "#/definitions/power" }
+      }
+    },
+    "conflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id","field_path","old_value","new_value","old_source_id","new_source_id","old_source_ref","new_source_ref","resolution","chosen_source_id","reason"],
+      "properties": {
+        "id":            { "type": "string" },
+        "field_path":    { "type": "string" },
+        "old_value":     {},
+        "new_value":     {},
+        "old_source_id": { "type": "string" },
+        "new_source_id": { "type": "string" },
+        "old_source_ref": { "type": ["object","null"] },
+        "new_source_ref": { "type": ["object","null"] },
+        "resolution": { "type": "string", "enum": ["chosen_new","chosen_old","unresolved","chosen_newer_publication"] },
+        "chosen_source_id": { "type": ["string","null"] },
+        "reason": { "type": "string" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extraction_notes","conflicts"],
+      "properties": {
+        "extraction_notes": { "type": ["string","null"] },
+        "conflicts": { "type": "array", "items": { "$ref": "#/definitions/conflict" } }
+      }
+    }
+  }
+}
